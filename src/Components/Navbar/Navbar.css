@@ -1,0 +1,136 @@
+
+:root{
+    --primary-100:#FF4081;
+    --primary-200:#ff79b0;
+    --primary-300:#ffe4ff;
+    --accent-100:#00BCD4;
+    --accent-200:#005e74;
+    --text-100:#333333;
+    --text-200:#5c5c5c;
+    --bg-100:#F5F5F5;
+    --bg-200:#ebebeb;
+    --bg-300:#c2c2c2;
+         
+}
+
+nav{
+    position: fixed;
+    width: 100vw;
+    color: var(--text-100);
+    top: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: space-around;
+    height: 20px;
+    background-color: var(--bg-100);
+}
+
+nav ul {
+    position: fixed; 
+    top: 25px; 
+    left: -110vw;
+    transition: transform 0.8s ease 0s;
+    width: 100%;
+    height: calc(100dvh-20px);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-100);
+
+
+}
+
+nav ul li{
+    list-style: none ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--text-100);
+    font-weight: bold;
+}
+
+input[type='checkbox']{
+    display: none;
+}
+
+nav ul li a{
+    color: var(--text-100)
+}
+
+nav label{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav label span{
+    width: 100%;
+    border-bottom: 2px solid var(--primary-100);
+    opacity: 1;
+    transition: opacity 1s ease 0s, transform 1s ease 0s;
+    border-radius: 10px;
+}
+
+input[type='checkbox']:checked ~ label > span:nth-child(2){
+    opacity: 0;
+}
+
+input[type='checkbox']:checked ~ label > span:nth-child(1){
+    transform: translate(0px, 13px) rotate(45deg);
+}
+
+input[type='checkbox']:checked ~ label > span:nth-child(3){
+    transform: translate(0px, -14px) rotate(-45deg);
+}
+input[type='checkbox']:checked ~ ul{
+    transform: translate(100vw, 0px);
+    z-index: 1;
+
+    
+}
+
+@media (min-width: 768px) { 
+    nav {
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav ul{
+        position: fixed;
+        top: 65px;
+        left: -110vw;
+        transition: transform 0.8s ease 0s;
+        width: 100%;
+        height: calc(100dvh-20px);
+        display: flex;
+        flex-direction: column;
+    }
+    input[type='checkbox']:checked ~ ul{
+        transform: translate(110vw, 0px);
+        z-index: 1;
+    
+        
+    }
+
+}
+
+@media (min-width: 1024px){
+    input[type='checkbox']:checked ~ ul{
+        transform: translate(110vw, 0px);
+        z-index: 1;
+        
+    }
+
+    nav a{
+            font-size: 50px;
+    }
+
+    
+}
+
