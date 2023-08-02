@@ -1,0 +1,9 @@
+.tecnologia{
+    background-color: red;
+    position: inherit;
+    top: 50px;
+}
+
+.tecnologia h1{
+    background-color: green;
+}

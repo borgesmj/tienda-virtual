@@ -11,9 +11,3 @@
   -webkit-text-size-adjust: 100%;
 }
 
-.main{
-  background-color: red;
-    top: 172px;
-    position: fixed;
-    z-index: -1;
-}
