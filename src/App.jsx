@@ -24,10 +24,10 @@ function App() {
 
           <div className='main'>
             <Routes>
-              <Route exact path='/' element={<Tecnologia/>}/>
-              <Route path='/SaludyBelleza' element={<SaludyBelleza/>}/>
-              <Route path='/Otros' element={<Otros/>}/>
-              <Route path='/Carrito' element={<Carrito/>}/>
+              <Route exact path='/tienda-virtual/' element={<Tecnologia/>}/>
+              <Route path='/tienda-virtual/SaludyBelleza' element={<SaludyBelleza/>}/>
+              <Route path='/tienda-virtual/Otros' element={<Otros/>}/>
+              <Route path='/tienda-virtual/Carrito' element={<Carrito/>}/>
             </Routes>
           </div>
       </Router>

@@ -6,10 +6,10 @@ import BiCart from '../CartIcon'
 const ProductList = () => {
 
   const navigation = [
-      {name: 'Tecnología', href: '/', current: true},
-      {name: 'Salud y Belleza', href: '/SaludyBelleza', current: false},
-      {name: 'Otros', href: '/otros', current: false},
-      {name: <BiCart/>, href: '/carrito', current: false},
+      {name: 'Tecnología', href: '/tienda-virtual/', current: true},
+      {name: 'Salud y Belleza', href: '/tienda-virtual/SaludyBelleza', current: false},
+      {name: 'Otros', href: '/tienda-virtual/otros', current: false},
+      {name: <BiCart/>, href: '/tienda-virtual/carrito', current: false},
   ]
   return (
     <div className='ProductList'>
