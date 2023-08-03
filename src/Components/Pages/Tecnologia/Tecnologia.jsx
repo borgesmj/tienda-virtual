@@ -1,10 +1,36 @@
 import React from 'react'
+import '../Products.css'
 
 const Tecnologia = () => {
   return (
-    <div className='tecnologia'>
-      <h1>tecnologia</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ea ratione quo ad maxime obcaecati tempore cumque? Veritatis nisi, exercitationem sint repudiandae iste iure odit ratione? Quis minima ducimus tempora?</p>
+    <div className='products__container'>
+      <h1>Tecnología y Gadgets </h1>
+      <div className='products__grid'>
+      <div className="card__container">
+              <img src="https://triidyftp.s3.us-east-2.amazonaws.com/Productos/154587.jpg" alt="" />
+              <h4>Audifonos Bluetooh</h4>
+              <p className='bold'>$ 60,999 MXN</p>
+              <button className='buy__btn'>Comprar</button>
+        </div>
+        <div className="card__container">
+              <img src="https://triidyftp.s3.us-east-2.amazonaws.com/Productos/154587.jpg" alt="" />
+              <h4>Audifonos Bluetooh</h4>
+              <p className='bold'>$ 60,999 MXN</p>
+              <button className='buy__btn'>Comprar</button>
+        </div>
+        <div className="card__container">
+              <img src="https://triidyftp.s3.us-east-2.amazonaws.com/Productos/154587.jpg" alt="" />
+              <h4>Audifonos Bluetooh</h4>
+              <p className='bold'>$ 60,999 MXN</p>
+              <button className='buy__btn'>Comprar</button>
+        </div>
+        <div className="card__container">
+              <img src="https://triidyftp.s3.us-east-2.amazonaws.com/Productos/154587.jpg" alt="" />
+              <h4>Audifonos Bluetooh</h4>
+              <p className='bold'>$ 60,999 MXN</p>
+              <button className='buy__btn'>Comprar</button>
+        </div>
+      </div>
     </div>
   )
 }

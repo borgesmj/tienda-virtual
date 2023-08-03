@@ -2,9 +2,34 @@ import React from 'react'
 
 const SaludyBelleza = () => {
   return (
-    <div>
-      <h1>salud y belleza</h1>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et deleniti, accusamus repellat voluptatem cumque sed, nobis quo quos officia minima obcaecati ex odit necessitatibus consequatur animi. In harum adipisci id?</p>
+    <div className='products__container'>
+      <h1>Salud y Belleza</h1>
+      <div className='products__grid'>
+      <div className="card__container">
+              <img src="https://triidyftp.s3.us-east-2.amazonaws.com/Productos/154587.jpg" alt="" />
+              <h4>Audifonos Bluetooh</h4>
+              <p className='bold'>$ 60,999 MXN</p>
+              <button className='buy__btn'>Comprar</button>
+        </div>
+        <div className="card__container">
+              <img src="https://triidyftp.s3.us-east-2.amazonaws.com/Productos/154587.jpg" alt="" />
+              <h4>Audifonos Bluetooh</h4>
+              <p className='bold'>$ 60,999 MXN</p>
+              <button className='buy__btn'>Comprar</button>
+        </div>
+        <div className="card__container">
+              <img src="https://triidyftp.s3.us-east-2.amazonaws.com/Productos/154587.jpg" alt="" />
+              <h4>Audifonos Bluetooh</h4>
+              <p className='bold'>$ 60,999 MXN</p>
+              <button className='buy__btn'>Comprar</button>
+        </div>
+        <div className="card__container">
+              <img src="https://triidyftp.s3.us-east-2.amazonaws.com/Productos/154587.jpg" alt="" />
+              <h4>Audifonos Bluetooh</h4>
+              <p className='bold'>$ 60,999 MXN</p>
+              <button className='buy__btn'>Comprar</button>
+        </div>
+      </div>
     </div>  
   )
 }
